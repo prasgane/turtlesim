@@ -1,0 +1,7 @@
+<launch>
+
+  <node pkg="pystar" type="turtlestar.py" name="turtlestar">
+    <rosparam file="$(find pystar)/launch/param.yaml" command="load" />
+  </node>
+  <node pkg="turtlesim" name="sim" type="turtlesim_node"/>
+</launch>

@@ -1,0 +1,11 @@
+<launch>
+
+  <node pkg="turtlestar" type="turtle_star_node" name="turtle_star_node">
+    <rosparam file="$(find turtlestar)/launch/param.yaml" command="load" />
+  </node>
+  <node pkg="turtlesim" name="sim" type="turtlesim_node"/>
+
+
+
+
+</launch>

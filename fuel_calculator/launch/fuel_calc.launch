@@ -1,0 +1,13 @@
+<launch>
+
+  <node pkg="fuel_calculator" type="fuel_calc_node" name="fuel_calc_node" output="screen">
+    <rosparam file="$(find fuel_calculator)/launch/param.yaml" command="load" />
+  </node>
+  
+  <include file="$(find turtlestar)/launch/turtleStar.launch"/>
+
+
+
+
+
+</launch>
